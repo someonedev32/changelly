@@ -1,110 +1,166 @@
-/* Reset default styles */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and general styles */
+/* General Body Styles */
 body {
     font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
 }
 
-/* Header (Logo) */
+/* Header Styles */
 header {
-    background-color: #1a1a1a;
+    background-color: #333;
     color: white;
+    text-align: center;
     padding: 20px;
-    text-transform: uppercase;
 }
 
-header h1 {
-    font-size: 36px;
-    font-weight: 700;
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-/* Features Box */
+/* Feature Section */
 .features {
-    background-color: #0066cc;
-    color: white;
-    padding: 30px;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
 }
 
 .feature-box {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .feature-box h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .feature-box ul {
     list-style-type: none;
-    padding: 0;
 }
 
-.feature-box li {
-    font-size: 18px;
+.feature-box ul li {
     margin: 10px 0;
 }
 
-/* Package section */
+.feature-box strong {
+    color: #007BFF;
+}
+
+/* Packages Section */
 .packages {
     display: flex;
     justify-content: space-around;
-    padding: 50px 20px;
-    margin-top: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
 }
 
 .package {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .package h2 {
-    font-size: 28px;
+    font-size: 1.5rem;
+    color: #333;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 .package p {
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .subscribe-button {
     display: inline-block;
-    width: 100%;
-    padding: 10px;
-    background-color: #0066cc;
+    background-color: #007BFF;
     color: white;
-    font-size: 18px;
+    padding: 10px 20px;
     text-decoration: none;
-    border: none;
+    font-weight: bold;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .subscribe-button:hover {
-    background-color: #005bb5;
+    background-color: #0056b3;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #1a1a1a;
-    color: white;
+    text-align: center;
     padding: 20px;
-    margin-top: 50px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .feature-box h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-box ul li {
+        font-size: 1rem;
+    }
+
+    .package h2 {
+        font-size: 1.3rem;
+    }
+
+    .package p {
+        font-size: 1rem;
+    }
+
+    .subscribe-button {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
 }
