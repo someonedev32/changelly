@@ -1,0 +1,86 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header (Logo) */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Package section */
+.packages {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.package {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.package h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.package p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.package input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.package button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.package button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
