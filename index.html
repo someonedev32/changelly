@@ -270,5 +270,43 @@
         function closeModal() {
             document.getElementById("paymentModal").style.display = "none";
         }
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("paymentModal").style.display = "none";
+        }
 
+        // Function to change the background color of the intro section to a random color
+        function getRandomColor() {
+            const colors = ['#ff6347', '#4682b4', '#32cd32', '#ff4500', '#6a5acd', '#ff1493', '#7fff00'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        // Function to apply the random background color
+        function applyRandomBackgroundColor() {
+            const introSection = document.getElementById('introSection');
+            introSection.style.backgroundColor = getRandomColor();
+        }
+
+        // Call the function to apply the random background color immediately after page load
+        applyRandomBackgroundColor();
+
+        // Function to scroll to the first package section
+        function scrollToPackage() {
+            const packageSection = document.getElementById('packages');
+            window.scrollTo({
+                top: packageSection.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        // Close modal if user clicks outside the modal
+        window.onclick = function (event) {
+            if (event.target == document.getElementById("paymentModal")) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+
+</html>
         
