@@ -26,11 +26,41 @@ header h1 {
     font-weight: 700;
 }
 
+/* Features Box */
+.features {
+    background-color: #0066cc;
+    color: white;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-box li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
 /* Package section */
 .packages {
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
+    margin-top: 20px;
 }
 
 .package {
@@ -39,6 +69,7 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 30%;
+    text-align: center;
 }
 
 .package h2 {
@@ -52,29 +83,22 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.package input[type="email"] {
+.subscribe-button {
+    display: inline-block;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 16px;
-}
-
-.package button {
-    width: 100%;
-    padding: 10px;
-    background-color: #1a1a1a;
+    background-color: #0066cc;
     color: white;
     font-size: 18px;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.package button:hover {
-    background-color: #333;
+.subscribe-button:hover {
+    background-color: #005bb5;
 }
 
 /* Footer */
