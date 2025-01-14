@@ -15,65 +15,67 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
         }
         header {
             background-color: #2c3e50;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         h1 {
             font-size: 2.5rem;
-        }
-        .features {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .feature-box h3 {
-            font-size: 1.5rem;
-            color: #333;
+            margin: 0;
         }
         .packages {
             display: flex;
-            justify-content: space-around;
-            margin: 20px;
+            justify-content: center;
+            margin: 40px 0;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .package {
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 30%;
-            margin: 10px;
+            width: 100%;
+            max-width: 350px;
             min-width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .package:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
         .package h2 {
             font-size: 1.8rem;
             font-weight: bold;
             color: #2c3e50;
+            margin-bottom: 10px;
         }
         .package p {
             color: #555;
             font-size: 1.1rem;
             margin-bottom: 20px;
+            line-height: 1.6;
         }
         .package .features-list {
             color: #555;
-            font-size: 1.1rem;
+            font-size: 1rem;
             text-align: left;
-            margin-top: 10px;
-            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .features-list p {
+            margin: 5px 0;
         }
         .subscribe-button {
             background-color: #27ae60;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 30px;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             border-radius: 5px;
             display: inline-block;
             transition: background-color 0.3s ease;
@@ -95,23 +97,14 @@
 
 <body>
     <header>
-        <h1>Buy IPTV Subscription for the Best Channels and Quality</h1>
+        <h1>Buy IPTV Subscription for Premium Channels & Quality</h1>
     </header>
 
-    <section class="features">
-        <div class="feature-box">
-            <h3>Features of Our IPTV Service</h3>
-            <p>🌍 20K Channels<br>
-               📺 8K Resolution<br>
-               ⏱️ Fast Support<br>
-               🔄 Upgrade/Downgrade Anytime</p>
-        </div>
-    </section>
-
     <section class="packages">
+        <!-- 3 Months Package -->
         <div class="package">
             <h2>3 Months IPTV Subscription</h2>
-            <p>Price: $19 USD</p>
+            <p><strong>Price: $19 USD</strong></p>
             <div class="features-list">
                 <p>🌍 <strong>20K Channels</strong></p>
                 <p>📺 <strong>8K Resolution</strong></p>
@@ -121,9 +114,10 @@
             <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
         </div>
 
+        <!-- 6 Months Package -->
         <div class="package">
             <h2>6 Months IPTV Subscription</h2>
-            <p>Price: $34 USD for 6 Months of IPTV service with fast support and upgrade/downgrade anytime.</p>
+            <p><strong>Price: $34 USD</strong></p>
             <div class="features-list">
                 <p>🌍 <strong>20K Channels</strong></p>
                 <p>📺 <strong>8K Resolution</strong></p>
@@ -133,9 +127,10 @@
             <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
         </div>
 
+        <!-- 12 Months Package -->
         <div class="package">
             <h2>12 Months IPTV Subscription</h2>
-            <p>Price: $59 USD for 12 Months of IPTV service with the best IPTV package including sports and movies.</p>
+            <p><strong>Price: $59 USD</strong></p>
             <div class="features-list">
                 <p>🌍 <strong>20K Channels</strong></p>
                 <p>📺 <strong>8K Resolution</strong></p>
