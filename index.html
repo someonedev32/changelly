@@ -253,8 +253,10 @@
             return color;
         }
 
-        // Set random background color for the header
-        document.getElementById("header").style.backgroundColor = getRandomColor();
+        // Function to change the header color every 3 seconds
+        setInterval(function() {
+            document.getElementById("header").style.backgroundColor = getRandomColor();
+        }, 3000); // 3000ms = 3 seconds
     </script>
 </body>
 
