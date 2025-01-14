@@ -11,12 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Body Flexbox Layout */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes the full height of the viewport */
         }
+
+        /* Main Content Area (Packages, Support Section) */
+        .main-content {
+            flex-grow: 1; /* This ensures the main content takes the available space */
+        }
+
         header {
             background-color: #2c3e50;
             color: white;
@@ -116,17 +126,14 @@
             background-color: #006f9b;
         }
 
-        /* Updated Footer */
+        /* Footer Styling */
         footer {
             background-color: #2c3e50;
             color: white;
             text-align: center;
             padding: 10px;
             font-size: 0.8rem;  /* Smaller font size */
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            left: 0;
+            margin-top: auto;  /* This pushes the footer to the bottom of the page */
         }
 
         footer p {
@@ -140,55 +147,58 @@
         <h1>Buy IPTV Subscription for Premium Channels & Quality</h1>
     </header>
 
-    <section class="packages">
-        <!-- 3 Months Package -->
-        <div class="package">
-            <h2>3 Months IPTV Subscription</h2>
-            <p><strong>Price: $19 USD</strong></p>
-            <div class="features-list">
-                <p>🌍 <strong>20K Channels</strong></p>
-                <p>📺 <strong>8K Resolution</strong></p>
-                <p>⏱️ <strong>Fast Support</strong></p>
-                <p>🔄 <strong>Upgrade/Downgrade Anytime</strong></p>
+    <div class="main-content">
+        <!-- Packages Section -->
+        <section class="packages">
+            <!-- 3 Months Package -->
+            <div class="package">
+                <h2>3 Months IPTV Subscription</h2>
+                <p><strong>Price: $19 USD</strong></p>
+                <div class="features-list">
+                    <p>🌍 <strong>20K Channels</strong></p>
+                    <p>📺 <strong>8K Resolution</strong></p>
+                    <p>⏱️ <strong>Fast Support</strong></p>
+                    <p>🔄 <strong>Upgrade/Downgrade Anytime</strong></p>
+                </div>
+                <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
             </div>
-            <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
-        </div>
 
-        <!-- 6 Months Package -->
-        <div class="package">
-            <h2>6 Months IPTV Subscription</h2>
-            <p><strong>Price: $34 USD</strong></p>
-            <div class="features-list">
-                <p>🌍 <strong>20K Channels</strong></p>
-                <p>📺 <strong>8K Resolution</strong></p>
-                <p>⏱️ <strong>Fast Support</strong></p>
-                <p>🔄 <strong>Upgrade/Downgrade Anytime</strong></p>
+            <!-- 6 Months Package -->
+            <div class="package">
+                <h2>6 Months IPTV Subscription</h2>
+                <p><strong>Price: $34 USD</strong></p>
+                <div class="features-list">
+                    <p>🌍 <strong>20K Channels</strong></p>
+                    <p>📺 <strong>8K Resolution</strong></p>
+                    <p>⏱️ <strong>Fast Support</strong></p>
+                    <p>🔄 <strong>Upgrade/Downgrade Anytime</strong></p>
+                </div>
+                <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
             </div>
-            <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
-        </div>
 
-        <!-- 12 Months Package -->
-        <div class="package">
-            <h2>12 Months IPTV Subscription</h2>
-            <p><strong>Price: $59 USD</strong></p>
-            <div class="features-list">
-                <p>🌍 <strong>20K Channels</strong></p>
-                <p>📺 <strong>8K Resolution</strong></p>
-                <p>⏱️ <strong>Fast Support</strong></p>
-                <p>🔄 <strong>Upgrade/Downgrade Anytime</strong></p>
+            <!-- 12 Months Package -->
+            <div class="package">
+                <h2>12 Months IPTV Subscription</h2>
+                <p><strong>Price: $59 USD</strong></p>
+                <div class="features-list">
+                    <p>🌍 <strong>20K Channels</strong></p>
+                    <p>📺 <strong>8K Resolution</strong></p>
+                    <p>⏱️ <strong>Fast Support</strong></p>
+                    <p>🔄 <strong>Upgrade/Downgrade Anytime</strong></p>
+                </div>
+                <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
             </div>
-            <a href="https://t.me/nextterminal" class="subscribe-button" target="_blank">Subscribe Now</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Updated Telegram Support Section -->
-    <section class="support-section">
-        <h2>Need Help or Have Questions?</h2>
-        <p>Our team is available to assist you with any questions or support regarding our IPTV service. Reach out to us via Telegram, and we’ll get back to you quickly!</p>
-        <a href="https://t.me/nextterminal" class="support-button" target="_blank">Contact Support on Telegram</a>
-    </section>
+        <!-- Updated Telegram Support Section -->
+        <section class="support-section">
+            <h2>Need Help or Have Questions?</h2>
+            <p>Our team is available to assist you with any questions or support regarding our IPTV service. Reach out to us via Telegram, and we’ll get back to you quickly!</p>
+            <a href="https://t.me/nextterminal" class="support-button" target="_blank">Contact Support on Telegram</a>
+        </section>
+    </div>
 
-    <!-- Updated Footer -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 IPTV Subscription. All Rights Reserved.</p>
     </footer>
