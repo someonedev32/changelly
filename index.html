@@ -32,6 +32,39 @@
             margin: 0;
         }
 
+        .discover-section {
+            background-color: black;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .discover-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .discover-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .discover-button {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .discover-button:hover {
+            background-color: #2ecc71;
+        }
+
         .packages {
             display: flex;
             justify-content: center;
@@ -167,6 +200,12 @@
         <h1>Buy IPTV Subscription for Premium Channels & Quality</h1>
     </header>
 
+    <div class="discover-section">
+        <h2>Discover the Best IPTV Provider</h2>
+        <p>Say goodbye to costly cables and endless buffering! Sign up now and instantly unlock access to over 24,000 live channels and 150,000 movies & shows. Elevate your viewing experience today!</p>
+        <a href="#order" class="discover-button">Order Your Package</a>
+    </div>
+
     <div class="main-content">
         <!-- Packages Section -->
         <section class="packages">
@@ -234,30 +273,4 @@
         }
 
         function closeModal() {
-            document.getElementById("paymentModal").style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == document.getElementById("paymentModal")) {
-                closeModal();
-            }
-        }
-
-        // Function to generate a random color
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        // Function to change the header color every 3 seconds
-        setInterval(function() {
-            document.getElementById("header").style.backgroundColor = getRandomColor();
-        }, 3000); // 3000ms = 3 seconds
-    </script>
-</body>
-
-</html>
+            document.getElementById("paymentModal").style.display = "
